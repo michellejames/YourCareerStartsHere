@@ -10,7 +10,70 @@ html, body {
 	margin: 0;
 
 }
+svg {
+	transform:translate(-44%,12%) scale(1);
+	position:relative;
+	left:50%;
+	top:50%;
+	transition: 1s all;
+	width: 100%;
 
+	&.active_2 {
+		transform: translate(33%, 62%) scale(6);
+	}
+	&.active_2-2 {
+		transform: translate(-54%, -102%) scale(6);
+	}
+
+	&.active_6-2 {
+		transform: translate(-126%, -55%) scale(6);
+	}
+
+	&.active_3-2 {
+		transform: translate(-99%, -208%) scale(6);
+	}
+
+	&.active_5-2 {
+		transform: translate(-148%, -145%) scale(6);
+	}
+
+	&.active_4-2 {
+		transform: translate(-189%, -217%) scale(6);
+	}
+
+	&.active_7 {
+		transform: translate(-201%, -14%) scale(6);
+	}
+
+	&.active_8 {
+		transform: translate(-126%, 117%) scale(6);
+	}
+
+	&.active_10 {
+		transform: translate(-185%, 173%) scale(6);
+	}
+
+	&.active_9 {
+		transform: translate(-40%, 123%) scale(6);
+	}
+
+	&.active_3 {
+		transform: translate(21%, -37%) scale(6);
+	}
+
+	&.active_5 {
+		transform: translate(50%, 167%) scale(6);
+	}
+
+	&.active_4 {
+		transform: translate(63%, -120%) scale(6);
+	}
+
+	&.active_6 {
+		transform: translate(126%, 3%) scale(6);
+	}
+
+}
 	text {
 		display: none;
 	}

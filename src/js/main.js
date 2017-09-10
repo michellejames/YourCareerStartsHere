@@ -1,38 +1,128 @@
-var ids = [
-	 "_2", "_3", "_4", "_5", "_6", "_7", "_8", "_9", "_10", "_2-2", "_3-2", "_4-2", "_5-2", "_6-2", 
-]
+$('.cls-32 .button_5-3-right').on('click', function(){
+ $('svg').addClass('active_2-2');
+ // $('.cls-162 lines-introTo_2-2-path').addClass('draw-line');
+ // $('.cls-14 lines-introTo_2-2-poly').addClass('point');
+ // setTimeout(function(){
+ //     $('#_2-2').addClass('active')
+ // }, 500);
+ console.log('fired');
+})
+$('.cls-32 .button_5-3-left').on('click', function(){
+ $('svg').addClass('active_2');
+ // $('.cls-162 lines-introTo_2-2-path').addClass('draw-line');
+ // $('.cls-14 lines-introTo_2-2-poly').addClass('point');
+ // setTimeout(function(){
+ //     $('#_2-2').addClass('active')
+ // }, 500);
+
+})
+$('.cls-14 .button_2-left').on('click', function(){
+ $('svg').addClass('active_5');
+})
+$('.cls-14 .button_2-right').on('click', function(){
+ $('svg').addClass('active_3');
+})
 
 
-for (var i = ids.length - 1; i >= 0; i--) {
-    var selector = ids[i];
-    // console.log(document.querySelector("#" + selector));
-    if(document.querySelector(".button" + selector + '-right')) {
-        document.querySelector(".button" + selector + '-right').addEventListener('onclick', function() {
-        	        	console.log('clicked')
-            document.querySelector(".button" + selector + '-right-line').addClass('active');
-            document.querySelector("svg").addClass('active-'+selector);    
-        });
-    }
-    if(document.querySelector(".button" + selector + '-left')) {
-        document.querySelector(".button" + selector + '-left').addEventListener('onclick', function(){
-        	        	console.log('onclicked')
-            document.querySelector(".button" + selector + '-left-line').addClass('active');
-            document.querySelector("svg").addClass('active-'+selector);
-        });
-    }
-    if(document.querySelector(".button" + selector + '-top')) {
-        document.querySelector(".button" + selector + '-top').addEventListener('onclick', function(){
-        	        	console.log('onclicked')
-            document.querySelector(".button" + selector + '-top-line').addClass('active');
-            document.querySelector("svg").addClass('active-'+selector);
-        });
-    }
-    if(document.querySelector(".button" + selector + '-bottom')) {
-        document.querySelector(".button" + selector + '-bottom').addEventListener('onclick', function(){
-        	console.log('clicked')
-            document.querySelector(".button" + selector + '-bottom-line').addClass('active');
-            document.querySelector("svg").addClass('active-'+selector);
-            console.log(document.querySelector("svg"));
-        });
-    }
-}
+
+
+$('.cls-32 .button_5-left').on('click', function(){
+ $('svg').addClass('active_4');
+})
+$('.cls-32 .button_5-right').on('click', function(){
+ $('svg').addClass('active_6');
+})
+
+
+$('.cls-4 button_4-right').on('click', function(){
+ $('svg').addClass('active_6');
+})
+$('.cls-4 button_4-left').on('click', function(){
+ $('svg').addClass('active_well_done');
+})
+
+
+$('.cls-14 .button_2-right').on('click', function(){
+ $('svg').addClass('active_5');
+})
+$('.cls-14 .button_2-left').on('click', function(){
+ $('svg').addClass('active_4');
+})
+
+
+$('.cls-4 .button_2-2-top').on('click', function(){
+ $('svg').addClass('active_2');
+})
+$('.cls-4 .button_2-2-right').on('click', function(){
+ $('svg').addClass('active_6-2');
+})
+$('.cls-4 .button_2-2-bottom').on('click', function(){
+ $('svg').addClass('active_3-2');
+})
+
+
+$('.cls-28 .button_3-2-left').on('click', function(){
+ $('svg').addClass('end');
+})
+$('.cls-28 .button_3-2-right').on('click', function(){
+ $('svg').addClass('active_6-2');
+})
+$('.cls-28 .button_3-2-bottom').on('click', function(){
+ $('svg').addClass('active_4-2');
+})
+
+    
+$('.cls-40 .button_9-top').on('click', function(){
+ $('svg').addClass('active_10');
+})
+$('.cls-40 .button_9-button').on('click', function(){
+ $('svg').addClass('active_5-3');
+})
+
+
+$('.cls-4 .button_4-2-left').on('click', function(){
+ $('svg').addClass('active_3-2');
+})
+$('.cls-4 .button_4-2-right').on('click', function(){
+ $('svg').addClass('end');
+})
+
+
+$('.cls-32 .button_5-2-right').on('click', function(){
+ $('svg').addClass('active_10');
+})
+$('.cls-32 .button_5-2-left').on('click', function(){
+ $('svg').addClass('end');
+})
+
+
+$('.cls-14 .button_6-2-right').on('click', function(){
+ $('svg').addClass('active_7');
+})
+$('.cls-14 .button_6-2-left').on('click', function(){
+ $('svg').addClass('active_3-2');
+})
+
+
+
+$('.cls-40 .button_8-top').on('click', function(){
+ $('svg').addClass('active_7');
+})
+$('.cls-40 .button_8-bottom').on('click', function(){
+ $('svg').addClass('active__9');
+})
+
+
+$('.cls-4 .button_10-right').on('click', function(){
+ $('svg').addClass('active_triple_a');
+})
+$('.cls-4 .button_10-left').on('click', function(){
+ $('svg').addClass('acive_hello');
+})
+
+$('.cls-40 .button_7-right').on('click', function(){
+ $('svg').addClass('active_8');
+})
+$('.cls-40 .button_7-left').on('click', function(){
+ $('svg').addClass('active_4-2');
+})
