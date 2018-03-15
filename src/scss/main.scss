@@ -10,20 +10,76 @@ html, body {
 	margin: 0;
 
 }
+.svg {
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
 svg {
-	transform:translate(-44%,12%) scale(1);
+	transform:translate(-46%, -43%) scale(6);
 	position:relative;
 	left:50%;
 	top:50%;
 	transition: 1s all;
 	width: 100%;
 
-	&.active_2 {
-		transform: translate(33%, 62%) scale(6);
+	&.lines-introTo_2-2-animation{
+		animation-name: linefivethreerighttotwotwo;
+		animation-duration: 1s;
+		animation-fill-mode: forwards; // Stay on the last frame
+		animation-iteration-count: 1; // Run only once
+		animation-timing-function: linear;
 	}
-	&.active_2-2 {
-		transform: translate(-54%, -102%) scale(6);
+
+	&.lines-introTo_2-animation {
+		animation-name: linefivethreerighttotwo;
+		animation-duration: 1s;
+		animation-fill-mode: forwards; // Stay on the last frame
+		animation-iteration-count: 1; // Run only once
+		animation-timing-function: linear;
 	}
+
+	&.lines-_2-2To_6-2-animation {
+		animation-name: linestwotwosixtwo;
+		animation-duration: 1s;
+		animation-fill-mode: forwards; // Stay on the last frame
+		animation-iteration-count: 1; // Run only once
+		animation-timing-function: linear;
+	}
+
+	&.lines-_2-2To_3-2-animation {
+		animation-name: linestwotwothreetwo;
+		animation-duration: 1s;
+		animation-fill-mode: forwards; // Stay on the last frame
+		animation-iteration-count: 1; // Run only once
+		animation-timing-function: linear;
+	}
+
+	&.lines-_3-2To_4-2-animation {
+		animation-name: linesthreetwofourtwo;
+		animation-duration: 1s;
+		animation-fill-mode: forwards; // Stay on the last frame
+		animation-iteration-count: 1; // Run only once
+		animation-timing-function: linear;
+	}
+
+	&.lines-_2-2To_2-animation {
+		animation-name: linestwotwotwo;
+		animation-duration: 1s;
+		animation-fill-mode: forwards; // Stay on the last frame
+		animation-iteration-count: 1; // Run only once
+		animation-timing-function: linear;
+	}
+
+
+
+
+
+
+
+
+
+
 
 	&.active_6-2 {
 		transform: translate(-126%, -55%) scale(6);
@@ -81,32 +137,35 @@ svg {
 // svg {
 
 //   path {
-//     stroke-dasharray: 100%;
-//     stroke-dashoffset: 100%;
-//     fill-opacity: 0;
-//     transition:5s all;
-//     transition-delay: 5s;
+  
 
-
-//     &.active {
-//     animation-name: draw;
-//     animation-duration: 5s;
-//     animation-fill-mode: forwards; // Stay on the last frame
-//     animation-iteration-count: 1; // Run only once
-//     animation-timing-function: linear;
-//     fill-opacity: 1;
-//     }
+// 	&.lines {
+// 		  stroke-dasharray: 100%;
+// 	      stroke-dashoffset: 100%;
+// 	      fill-opacity: 0;
+// 	      transition:5s all;
+// 	      transition-delay: 5s;
+// 		 &.active {
+// 		    animation-name: draw;
+// 		    animation-duration: 5s;
+// 		    animation-fill-mode: forwards; // Stay on the last frame
+// 		    animation-iteration-count: 1; // Run only once
+// 		    animation-timing-function: linear;
+// 		    fill-opacity: 1;
+// 	    }
+// 	}
+   
 //   }
 
-//   polygon {
-// 	transition:5s all;
-//   	fill-opacity: 0;
+//  //  polygon {
+// 	// transition:5s all;
+//  //  	fill-opacity: 0;
 
 
-//     &.active {
-//     fill-opacity: 1;
-//     }
-//   }
+//  //    &.active {
+//  //    fill-opacity: 1;
+//  //    }
+//  //  }
 // }
 
 @keyframes draw {
@@ -114,4 +173,101 @@ svg {
     stroke-dashoffset: 0;
   }
 }
+
+@keyframes draw {
+  0% {stroke-dashoffset: 0;}
+}
+
+@keyframes linefivethreerighttotwotwo {
+	0% {
+		transform:translate(-46%, -43%)  scale(6);
+	}
+	33% {
+		transform:translate(-43%,-76%)  scale(6);
+	}
+	66% {
+		transform: translate(-47%, -110%)  scale(6);
+	}
+	100% {
+		transform:translate(-52%, -146%)  scale(6);
+	}
+}
+
+@keyframes linefivethreerighttotwo {
+	0% {
+		transform:translate(-46%, -43%)  scale(6);
+
+	}
+
+	100% {
+		transform: translate(33%, 12%) scale(6);
+	}
+}
+
+@keyframes linestwotwosixtwo {
+	0% {
+		transform:translate(-52%, -146%)  scale(6);
+
+	}
+
+	100% {
+		transform: translate(-119%, -102%) scale(6)
+	}
+}
+
+@keyframes linefivethreerighttotwo {
+	0% {
+		transform:translate(-46%, -43%)  scale(6);
+
+	}
+
+	100% {
+		transform: translate(33%, 12%) scale(6);
+	}
+}
+
+@keyframes linestwotwothreetwo {
+	0% {
+		transform:translate(-52%, -146%)  scale(6);
+
+	}
+
+	100% {
+		transform: translate(-96%, -257%) scale(6);
+	}
+}
+
+@keyframes linestwotwothreetwo {
+	0% {
+		transform:translate(-52%, -146%)  scale(6);
+
+	}
+
+	100% {
+		transform: translate(-96%, -257%) scale(6);
+	}
+}
+
+@keyframes linesthreetwofourtwo {
+	0% {
+		transform: translate(-96%, -257%) scale(6);
+
+	}
+	100% {
+		transform: translate(-186%, -269%) scale(6);
+	}
+}
+
+@keyframes linestwotwotwo {
+	0% {
+		transform:translate(-52%, -146%)  scale(6);
+
+	}
+	100% {
+		transform:translate(-52%, -146%)  scale(6);
+	}
+}
+
+
+
 
